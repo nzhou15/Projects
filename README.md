@@ -1,6 +1,6 @@
 # Projects
 
-### Full Stack Project - School of Computer Science TA Management Website
+## Full Stack Project - School of Computer Science TA Management Website
 
 Build a new  School of Computer Science TA  Management website. 
 Design a professional looking website: **responsive, interactive, functional** and **pretty**.  
@@ -17,7 +17,7 @@ Worked with Yining Wang and Xinyue Wei as a team of three.
 
 
 
-### Midwifery Database Application
+## Midwifery Database Application
 
 Developed a **Java** application to be used by the Midwifery program run by the Quebec Ministry of Health. This program allows pregnant couples to receive supports and basic health care services through a personalized midwife (Sgae-femme). 
 
@@ -29,11 +29,11 @@ Developed a **Java** application to be used by the Midwifery program run by the 
 
 ER model:
 
-<img src="/Users/admin/Library/Application Support/typora-user-images/image-20220506144915963.png" alt="image-20220506144915963" style="zoom:50%;" />
+<img src="/images/ER.pdf" alt="ER-model" style="zoom:50%;" />
 
 
 
-### Data Analytics of Discussions Around a Recently-released Movie
+## Data Analytics of Discussions Around a Recently-released Movie
 
 ###### Overview
 
@@ -55,7 +55,7 @@ Worked well in **a team of 3** and **independently**.
 
 
 
-### Goal-oriented game AI within Unity3D/C#
+## Goal-oriented game AI within Unity3D/C#
 
 Implement the **AI system** entirely from scratch without using any built-in or external implementations, assets, or tools for game AI. 
 
