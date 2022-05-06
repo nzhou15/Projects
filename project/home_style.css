@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    /* background: url("images/orange_background.jpeg"); */
+    background: url('images/orange_background.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+input[type="text"], input[type="radio"] {
+    margin-bottom: 1%;
+}
+
+.header {
+    background-color: #3C403D;
+    height: 3%;
+    text-align: right;
+    width: 100%;
+}
+
+.header input {
+    color: white;
+    background: none;
+    border: none;
+}
+
+/* From uiverse.io by @abrahamcalsin */
+button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #39603D;
+    color: white;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+    margin-right: 2%;
+    margin-top: 0.5%;
+}
+
+button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #DADED4;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}
+
+button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 17px;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+    color: #39603D;
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+.hint {
+    width: 80%;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #bababa,
+                -5px -5px 10px #ffffff;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    margin: 0.5%;
+}
+
+.yellow a, .orange a {
+    color: #3C403D;
+    text-decoration: underline;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.yellow a:hover, .orange a:hover {
+    color: #A3BCB6;
+}
+
+.yellow input[type="text"], orange input[type="text"]{
+    margin-right: 3%;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    width: 5em;
+    line-height: 0.9em;
+    float: right;
+}
+
+.rainbow-text {
+    /* Create a conic gradient. */
+    /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(
+        #e3ad66 16.666%,
+        /* #89abc7 16.666%, */
+        #ffa3f2 16.666%,
+        /* #bf8241 33.333%, */
+        #89abc7 33.333%, 
+        #ffc096 33.333%, 
+        #88c47e 50%, 
+        #6ac2e6 50%, 
+        #fab53e 66.666%, 
+        #eb60b6 66.666%, 
+        #eb6f28 83.333%, 
+        #e6acc5 83.333%);
+    
+    /* Set thee background size and repeat properties. */
+    background-size: 57%;
+    background-repeat: repeat;
+    
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+    cursor: pointer;
+}
+
+/* Add animation on hover. */
+.rainbow-text:hover {
+    animation: rainbow-text-animation 0.5s ease forwards;
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation {
+    0% {
+        background-size: 57%;
+        background-position: 0 0;
+    }
+    20% {
+        background-size: 57%;
+        background-position: 0 1em;
+    }
+    100% {
+        background-size: 300%;
+        background-position: -9em 1em;
+    }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+    0% {
+        background-size: 300%;
+        background-position: -9em 1em;
+    }
+    20% {
+        background-size: 57%;
+        background-position: 0 1em;
+    }
+    100% {
+        background-size: 57%;
+        background-position: 0 0;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Clearing floats */
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu, s.submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Main level */
+.menu {			
+    margin: 10px auto;
+    width: 800px;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;	
+}
+
+.menu > li {
+    background: #39603D;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}		
+
+.menu li:hover {
+    background: #DADED4;
+    color: black;
+}	
+
+.menu > li > a {
+    transform: skewX(-25deg);
+    padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-color: #A3BCB6;
+  position: relative;
+  overflow: hidden;		
+}						
+
+.submenu > li > a {
+  padding: 1em 2em;			
+}
+		
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu, .submenu li {
+    opacity: 0;
+    visibility: hidden;			
+}
+
+.submenu li {
+    transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+    opacity: 1;
+    visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+    transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+    transform: skewX(-25deg) translateX(-15px);			
+}
+
+.frame{
+    width: 50%;
+    height: 70%;
+    background: #DADED4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto ;
+    border-radius: 10px;
+
+    padding: 20px 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px #DADED4;
+}
+
+#manage_users, #add_users, #import_users{
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+#ta_cohort, #ta_info, #course_ta_history, #add_ta, #remove_ta {
+    padding-top: 12px;
+    padding-left: 20px;
+}
+
+.rating_green, .blue_content{
+    padding-top: 120px;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #39603D;
+    display: none;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #DADED4;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #A3BCB6;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* fit screen */
+@media screen and (max-width: 600px) {
+    #myTopnav { display: block; }
+    .topnav a:not(:first-child) { display: none; }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .menu { display: none; }
+    .hint { display: none; }
+
+    .rainbow-text {
+        float: left;
+        font-size: 1.5em;
+    }
+}
