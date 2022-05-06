@@ -29,8 +29,7 @@ Developed a **Java** application to be used by the Midwifery program run by the 
 
 ER model:
 
-<img src="/images/ER.pdf" alt="ER-model" style="zoom:50%;" />
-
+![ER model](https://github.com/nzhou15/Projects/blob/main/images/ER.pdf)
 
 
 ## Data Analytics of Discussions Around a Recently-released Movie
