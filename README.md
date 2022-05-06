@@ -1,1 +1,1 @@
-# mcgill_projects
+# McGill_projects
