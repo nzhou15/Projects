@@ -1,5 +1,17 @@
 # Projects
 
+## Goal-oriented game AI within Unity3D/C#
+
+Implement the **AI system** entirely from scratch without using any built-in or external implementations, assets, or tools for game AI. 
+
+The terrain is populated with 5 squirrels, each of which is controlled by its own **goal-oriented** AI system. Each squirrel is associated with (and initially spawned at) a unique tree (its home tree). Squirrels generally explore and exhibit some kind of simple idle behaviour, gather food (either nuts or whatever they find in garbage cans) which they bring back to their home tree, and practice self-preservation by running away from a player who gets too close. 
+
+The player can impact the AI since squirrel’s run away. Pressing the space-bar should toggle the player in/out of a ghost-mode, during which the squirrels ignore the player. Thus, AI needs to re-plan to acheive the original goal. 
+
+[Other projecting within Unity2D/3D](https://github.com/nzhou15/COMP-521-Modern-Computer-Games)
+
+
+
 ## Full Stack Project - School of Computer Science TA Management Website
 
 Build a new [School of Computer Science TA  Management website](https://www.cs.mcgill.ca/~jzhou70/project/login_page.php). 
@@ -45,14 +57,3 @@ The analysis was draw on Twitter posts (tweets). Collected and filtered out 1,00
 Analyzed the salient topics by computing **tf-idf scores**, the relative engagement and the sentiments with those topics. Visualized results and reported using **Matplotlib** library. 
 
 Worked well in **a team of 3** and **independently**. 
-
-
-
-## Goal-oriented game AI within Unity3D/C#
-
-Implement the **AI system** entirely from scratch without using any built-in or external implementations, assets, or tools for game AI. 
-
-The terrain is populated with 5 squirrels, each of which is controlled by its own **goal-oriented** AI system. Each squirrel is associated with (and initially spawned at) a unique tree (its home tree). Squirrels generally explore and exhibit some kind of simple idle behaviour, gather food (either nuts or whatever they find in garbage cans) which they bring back to their home tree, and practice self-preservation by running away from a player who gets too close. 
-
-The player can impact the AI since squirrel’s run away. Pressing the space-bar should toggle the player in/out of a ghost-mode, during which the squirrels ignore the player. Thus, AI needs to re-plan to acheive the original goal. 
-
