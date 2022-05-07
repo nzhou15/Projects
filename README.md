@@ -2,7 +2,7 @@
 
 ## Full Stack Project - School of Computer Science TA Management Website
 
-Build a new  School of Computer Science TA  Management website. 
+Build a new [School of Computer Science TA  Management website](https://www.cs.mcgill.ca/~jzhou70/project/login_page.php). 
 Design a professional looking website: **responsive, interactive, functional** and **pretty**.  
 
 Based on users' types (students, professors, TA administrators, teaching assistants and system operators), users can use multiple functionalities, for instance, students can rate teaching assistants in their courses or system operators can manage users. 
@@ -24,12 +24,6 @@ Developed a **Java** application to be used by the Midwifery program run by the 
 - Step 1: design a model.
 - Step 2: create a schema and implement a database using **DB2**, poputlate the database with data, maintain, query and update data using **IntelliJ IDEA IDE**. 
 - Step 3: devlop application programs, and implement a user-friendly interface with **JDBC**. 
-
-
-
-ER model:
-
-![ER model](https://github.com/nzhou15/Projects/blob/main/images/ER.pdf)
 
 
 ## Data Analytics of Discussions Around a Recently-released Movie
