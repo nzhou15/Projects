@@ -8,7 +8,7 @@ The terrain is populated with 5 squirrels, each of which is controlled by its ow
 
 The player can impact the AI since squirrel’s run away. Pressing the space-bar should toggle the player in/out of a ghost-mode, during which the squirrels ignore the player. Thus, AI needs to re-plan to acheive the original goal. 
 
-[Other projecting within Unity2D/3D](https://github.com/nzhou15/COMP-521-Modern-Computer-Games)
+[Other projects(Perfect Maze/Verlet Integration/Pathfinding) within Unity2D/3D](https://github.com/nzhou15/COMP-521-Modern-Computer-Games)
 
 
 
